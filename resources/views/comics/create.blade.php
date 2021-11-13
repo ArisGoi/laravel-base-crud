@@ -4,8 +4,9 @@
     <h1>Create new Comic</h1>
 
     <form action="{{'comics.store'}}" method="post">
+    @method('put')
     @csrf
-    
+
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title">
