@@ -139,7 +139,7 @@ public function create()
     return view('nomeCartella.nomeView');
 }
 ```
-- Nella view creiamo il form stando attenti a modificare: Method, action, name degli input e aggiungere @csrf subito dopo il tag ```<form action="{{'nome.store'}}" method="post">```
+- Nella view creiamo il form stando attenti a modificare: Method, action, name degli input e aggiungere @csrf subito dopo il tag ```<form action="{{route('nome.store')}}" method="post">```
 - Ora dobbiamo impostare nel controller la funzione store() per salvare i dati che inviamo dal form:
 ```php
 //app/Http/controllers/nomeControllerCRUD

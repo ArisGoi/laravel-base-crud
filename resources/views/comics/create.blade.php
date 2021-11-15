@@ -3,8 +3,7 @@
 @section('pageContent')
     <h1>Create new Comic</h1>
 
-    <form action="{{'comics.store'}}" method="post">
-    @method('put')
+    <form action="{{route('comics.store')}}" method="POST">
     @csrf
 
         <div class="form-group">
